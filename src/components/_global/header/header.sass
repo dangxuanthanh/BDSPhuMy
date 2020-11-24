@@ -1,0 +1,117 @@
+header
+    nav
+        display: flex
+        align-items: center
+        justify-content: space-between
+        height: 9rem
+        position: relative
+        .header_left
+            display: flex
+            align-items: center
+            .toggle-menu
+                width: 10rem
+                height: 4rem
+                font-size: 1.6rem
+                display: flex
+                align-items: center
+                justify-content: center
+                color: #fefffe
+                background-color: #6ba944
+                cursor: pointer
+                transition: 0.3s all
+                &::before
+                    content: "\ef3b"
+                    font-family: "remixicon"
+                    margin-right: 1rem
+                    font-size: 2.4rem
+                &.click
+                    background-color: #15552d
+                    &::before
+                        content: "\eb99"
+            .main-menu
+                position: absolute
+                background-color: rgba(107,169,68,.9)
+                top: 9rem
+                padding: 7rem
+                width: 84rem
+                ul
+                    list-style: none
+                    li
+                        padding: .5rem 0
+                        a
+                            color: #c4dcb4
+                            font-size: 3rem
+                            text-transform: uppercase
+                            position: relative
+                            width: max-content
+                            font-weight: 700
+                            text-transform: uppercase
+                            transition: all .3s ease-in-out
+                            &::before
+                                position: absolute
+                                content: ''
+                                width: 20px
+                                height: 1px
+                                background-color: #d5ab67
+                                top: 50%
+                                left: -35px
+                                transform: translateY(-50%)
+                                visibility: hidden
+                                opacity: 0
+                            &::after
+                                position: absolute
+                                content: ''
+                                width: 40px
+                                height: 1px
+                                background-color: #d5ab67
+                                top: 50%
+                                right: -50px
+                                transform: translateY(-50%)
+                                visibility: hidden
+                                opacity: 0
+            .language
+                padding-left: 1.5rem
+                ul
+                    display: flex
+                    list-style: none
+                    li
+                        padding: 0 .5rem
+                        a
+                            font-size: 1.4rem
+                            color: #999999
+                        &:first-child
+                            border-right: 1px solid #999999
+                        &.active
+                            a
+                                color: #6ba944
+
+        .logo
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            transition: all .3s
+            width: 7rem
+        .header_right
+            display: flex
+            align-items: center
+            justify-content: center
+            .hotline
+                width: 18rem
+                height: 4rem
+                display: flex
+                align-items: center
+                justify-content: center
+                color: #fefffe
+                background-color: #6ba944
+                font-size: 1.8rem
+                &::before
+                    content: "\efec"
+                    font-family: "remixicon"
+                    margin-right: 1.5rem
+                    font-size: 2.4rem
+            .search-box
+                margin-left: 2rem
+                span
+                    font-size: 2.4rem
+                    color: #6ba944
+                    cursor: pointer
